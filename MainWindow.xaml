@@ -1,0 +1,43 @@
+﻿<Window x:Class="Module_9_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+        xmlns:local="clr-namespace:Module_9_WPF"
+
+        Title="Window" 
+        MinHeight="100"
+        MinWidth="100"
+        MaxHeight="1000"
+        MaxWidth="2000"
+        Height="500" 
+        Width="900">
+    <Grid AutomationProperties.IsOffscreenBehavior="FromClip" UseLayoutRounding="False">
+
+        <Button Content="MyButton" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                FontSize="15" 
+                FontFamily="Bahnschrift SemiBold"
+                Click="btnClick" Background="#FF86F389" BorderBrush="#FFF91414" Cursor="Arrow" ClickMode="Press"
+                />
+        <TextBox x:Name="txtName" HorizontalAlignment="Center" 
+                 Margin="0,130,0,0" 
+                 TextWrapping="Wrap" 
+                 Text="Enter you text" 
+                 VerticalAlignment="Top" 
+                 Width="222" 
+                 Height="81" 
+                 Background="#FFF10A0A" 
+                 BorderBrush="#FF0638CC"
+                 FontFamily="Arial Black"/>
+        <Rectangle x:Name="rect"
+                   HorizontalAlignment="Center" 
+                   Height="100" Margin="0,275,0,0"
+                   Stroke="Black" 
+                   VerticalAlignment="Top" 
+                   Width="100" 
+                   MouseDown="Rectangle_MouseDown" MouseEnter="rect_MouseEnter" MouseLeave="rect_MouseLeave"/>
+
+
+    </Grid>
+</Window>
